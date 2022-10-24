@@ -1,9 +1,98 @@
 @import url(null.css);
 @import url(preloader.css);
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&family=Inter:wght@400;500;800&family=League+Spartan:wght@600&family=Orbitron:wght@700&family=Rajdhani:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap");
+/*
+font-family: 'Aldrich', sans-serif;
+font-family: 'Inter', sans-serif;
+font-family: 'League Spartan', sans-serif;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Rajdhani', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
 html {
   scroll-behavior: smooth;
 }
 
 body {
   overflow-x: hidden;
+}
+
+.wrapper {
+  background: rgb(32, 8, 59);
+  -webkit-backdrop-filter: blur(92.3058px);
+          backdrop-filter: blur(92.3058px);
+  font-family: "Orbitron";
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+._content {
+  max-width: 1280px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 50px 0;
+}
+.header .header__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header__flex .header__logo {
+  flex-basis: 25%;
+  padding-right: 10px;
+}
+.header .header__flex .header__menu {
+  flex-basis: 35%;
+}
+.header .header__flex .header__icons {
+  flex-basis: 40%;
+  display: flex;
+  justify-content: end;
+}
+.header .header__flex .header__icons svg {
+  margin-left: 10%;
+  transition: 0.3s;
+}
+.header .header__flex .header__icons svg:hover {
+  transition: 0.3s;
+  transform: scale(1.25);
+}
+.header .header__flex .header__icons svg:active {
+  transition: 0.1s;
+  transform: scale(1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo span {
+  font-size: 19.8983px;
+  line-height: 25px;
+}
+.logo .logo__text_ocean {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+.menu .menu__item {
+  font-size: 19.8983px;
+  line-height: 25px;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 15px 20px;
+  transition: 0.15s;
+}
+.menu .menu__item:hover {
+  color: #FFFFFF;
+  transition: 0.15s;
+}
+.menu .menu__item:active {
+  color: rgba(255, 255, 255, 0.6);
+  transition: 0.1s;
 }/*# sourceMappingURL=style.css.map */
