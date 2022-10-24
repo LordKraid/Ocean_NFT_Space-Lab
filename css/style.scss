@@ -1,3 +1,10 @@
 @import url(null.css);
 @import url(preloader.css);
 
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}

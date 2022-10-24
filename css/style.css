@@ -1,2 +1,9 @@
 @import url(null.css);
-@import url(preloader.css);/*# sourceMappingURL=style.css.map */
+@import url(preloader.css);
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}/*# sourceMappingURL=style.css.map */
