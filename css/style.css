@@ -52,15 +52,16 @@ body {
   display: flex;
   justify-content: end;
 }
-.header .header__flex .header__icons svg {
-  margin-left: 10%;
+.header .header__flex .header__icons a {
+  padding: 10px;
+  margin-left: 6%;
   transition: 0.3s;
 }
-.header .header__flex .header__icons svg:hover {
+.header .header__flex .header__icons a:hover {
   transition: 0.3s;
   transform: scale(1.25);
 }
-.header .header__flex .header__icons svg:active {
+.header .header__flex .header__icons a:active {
   transition: 0.1s;
   transform: scale(1);
 }

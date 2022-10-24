@@ -61,17 +61,19 @@ body{
             
             justify-content: end;
 
-            svg{
-                margin-left: 10%;
+            a{
+                padding: 10px;
+                margin-left: 6%;
                 transition: 0.3s;
+
             }
-            
-            svg:hover{
+
+            a:hover{
                 transition: 0.3s;
                 transform: scale(1.25);
             }
 
-            svg:active{
+            a:active{
                 transition: 0.1s;
                 transform: scale(1);
             }
