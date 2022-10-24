@@ -33,6 +33,10 @@ body {
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding: 50px 0;
 }
 .header .header__flex {
@@ -96,4 +100,213 @@ body {
 .menu .menu__item:active {
   color: rgba(255, 255, 255, 0.6);
   transition: 0.1s;
+}
+
+.main .main__flex {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 200px;
+}
+.main .main__flex .main__info {
+  flex-basis: 55%;
+}
+.main .main__flex .main__NFT {
+  margin-left: 50px;
+  flex-basis: 40%;
+}
+.main .main__flex .main__NFT .main__NFT-pictures {
+  box-shadow: 1px 3px 5px black;
+  border-radius: 20px;
+  display: inline-block;
+}
+.main .main__flex .main__NFT .main__NFT-pictures img {
+  border-radius: 20px;
+}
+.main .main__flex .main__NFT .main__NFT__seller-card {
+  border-radius: 8.84367px;
+  max-width: 336px;
+  padding: 27px 20px 18px;
+  position: relative;
+  top: -100px;
+  left: 155px;
+}
+.main .main__flex .main__partners {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  margin-bottom: 215px;
+}
+
+.info h1 {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 600;
+  font-size: 66.3276px;
+  line-height: 137.4%;
+  margin-bottom: 21px;
+}
+.info h1 span {
+  background: linear-gradient(89.89deg, #FF56F6 2.33%, #42A6E3 101.4%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.info p {
+  font-family: "Rajdhani";
+  font-weight: 400;
+  font-size: 26.531px;
+  line-height: 44px;
+  margin-bottom: 43px;
+}
+.info .info__buttons {
+  margin-bottom: 70px;
+}
+.info .info__buttons .button_border-slesh {
+  background: linear-gradient(89.89deg, #42A6E3 2.33%, #FF56F6 101.4%);
+  -webkit-backdrop-filter: blur(106.124px);
+          backdrop-filter: blur(106.124px);
+  border-radius: 2.21092px;
+  font-size: 19.8983px;
+  line-height: 25px;
+  padding: 20px 32px 19px 67px;
+}
+.info .info__buttons .button_border-slesh svg {
+  margin-left: 5px;
+}
+.info .info__buttons .info__create {
+  background: linear-gradient(89.89deg, #42A6E3 2.33%, #FF56F6 101.4%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 19.8983px;
+  line-height: 25px;
+  margin-left: 37px;
+}
+
+.button {
+  background: linear-gradient(92.23deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+  box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+  font-family: "Orbitron";
+  font-weight: 700;
+  color: #FFFFFF;
+}
+.button a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.button a svg {
+  margin-left: 10px;
+}
+
+.statistic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 500px;
+}
+.statistic .statistic__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.statistic .statistic__item h2 {
+  font-family: "Aldrich";
+  font-weight: 400;
+  font-size: 39.7965px;
+  line-height: 53px;
+  letter-spacing: 0.221092px;
+}
+.statistic .statistic__item h5 {
+  font-family: "Aldrich";
+  font-weight: 400;
+  font-size: 17.6873px;
+  line-height: 22px;
+  letter-spacing: 0.221092px;
+}
+.statistic .statistic__line {
+  border-left: 1.10546px solid rgba(255, 255, 255, 0.26);
+  height: 60px;
+}
+
+.seller-card {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Rajdhani";
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.52%, rgba(255, 255, 255, 0.024) 104.35%);
+  -webkit-backdrop-filter: blur(30.4001px);
+          backdrop-filter: blur(30.4001px);
+}
+.seller-card .seller-card__column1 h2 {
+  font-weight: 700;
+  font-size: 17.6873px;
+  line-height: 35px;
+}
+.seller-card .seller-card__column1 .seller-card__profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6.63px;
+}
+.seller-card .seller-card__column1 .seller-card__profile span {
+  padding: 0 3.32px;
+}
+.seller-card .seller-card__column1 p {
+  font-weight: 600;
+  font-size: 11.0546px;
+  line-height: 35px;
+  opacity: 0.7;
+}
+.seller-card .seller-card__column1 .seller-card__ETH {
+  display: flex;
+  align-items: center;
+  margin-top: -10px;
+}
+.seller-card .seller-card__column1 .seller-card__ETH .simple {
+  font-family: "Orbitron";
+  font-weight: 700;
+  font-size: 9.71776px;
+  line-height: 12px;
+  margin: 0 5.5px;
+}
+.seller-card .seller-card__column1 .seller-card__ETH .gray {
+  font-family: "Rajdhani";
+  font-weight: 400;
+  font-size: 11.0546px;
+  line-height: 35px;
+  opacity: 0.7;
+  padding-top: 2px;
+}
+.seller-card .seller-card__column2 p {
+  font-weight: 600;
+  font-size: 11.0546px;
+  line-height: 35px;
+  opacity: 0.7;
+}
+.seller-card .seller-card__column2 .seller-card__counter {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 23px;
+}
+.seller-card .seller-card__column2 .seller-card__counter .counter__item {
+  display: flex;
+  flex-direction: column;
+}
+.seller-card .seller-card__column2 .seller-card__counter .counter__item h3 {
+  font-weight: 600;
+  font-size: 17.6873px;
+  line-height: 15px;
+}
+.seller-card .seller-card__column2 .seller-card__counter .counter__item span {
+  font-weight: 500;
+  font-size: 11.0546px;
+  line-height: 15px;
+  opacity: 0.7;
+}
+.seller-card .seller-card__column2 .seller-card__button {
+  font-family: "Rajdhani";
+  font-weight: 600;
+  font-size: 17.6873px;
+  line-height: 23px;
+  padding: 7.7px 8.8px;
+  border-radius: 2.21092px;
 }/*# sourceMappingURL=style.css.map */
