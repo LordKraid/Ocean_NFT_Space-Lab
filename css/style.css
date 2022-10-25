@@ -27,8 +27,8 @@ body {
 }
 
 ._content {
-  max-width: 1280px;
-  padding: 0 30px;
+  max-width: 1290px;
+  padding: 0 25px;
   margin: 0 auto;
 }
 
@@ -106,13 +106,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   padding-top: 200px;
+  margin-bottom: 215px;
 }
 .main .main__flex .main__info {
   flex-basis: 55%;
 }
 .main .main__flex .main__NFT {
   margin-left: 50px;
-  flex-basis: 40%;
 }
 .main .main__flex .main__NFT .main__NFT-pictures {
   box-shadow: 1px 3px 5px black;
@@ -121,13 +121,14 @@ body {
 }
 .main .main__flex .main__NFT .main__NFT-pictures img {
   border-radius: 20px;
+  width: 100%;
 }
 .main .main__flex .main__NFT .main__NFT__seller-card {
   border-radius: 8.84367px;
   max-width: 336px;
   padding: 27px 20px 18px;
   position: relative;
-  top: -100px;
+  top: -120px;
   left: 155px;
 }
 .main .main__flex .main__partners {
@@ -135,7 +136,15 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-grow: 1;
-  margin-bottom: 215px;
+}
+.main .main__flex .main__partners .main__partners-left, .main .main__flex .main__partners .main__partners-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 47%;
+}
+.main .main__flex .main__partners .main__partners-left div img, .main .main__flex .main__partners .main__partners-right div img {
+  width: 100%;
 }
 
 .info h1 {
@@ -309,4 +318,64 @@ body {
   line-height: 23px;
   padding: 7.7px 8.8px;
   border-radius: 2.21092px;
+}
+
+@media (max-width: 1280px) {
+  .main .main__flex .main__info {
+    flex-basis: 51%;
+  }
+  .main .main__flex .main__NFT .main__NFT__seller-card {
+    max-width: none;
+    width: 100%;
+    padding: 27px 20px 18px;
+    position: static;
+    margin-top: -130px;
+  }
+  .main .main__flex .main__partners {
+    margin-top: 130px;
+  }
+}
+@media (max-width: 992px) {
+  .main .main__flex {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .main .main__flex .main__info {
+    text-align: center;
+  }
+  .main .main__flex .main__info .info__statistic {
+    margin: 0 auto;
+  }
+  .main .main__flex .main__NFT {
+    margin-left: 0;
+    order: 3;
+  }
+  .main .main__flex .main__partners {
+    width: 100%;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+    flex-grow: 1;
+    margin-bottom: 100px;
+  }
+  .main .main__flex .main__partners .main__partners-left {
+    margin-bottom: 80px;
+  }
+  .main .main__flex .main__partners .main__partners-left, .main .main__flex .main__partners .main__partners-right {
+    justify-content: space-around;
+    flex-grow: 1;
+    width: 100%;
+  }
+  .main .main__flex .main__partners .main__partners-left div, .main .main__flex .main__partners .main__partners-right div {
+    flex-basis: 30%;
+  }
+  .main .main__flex .main__partners .main__partners-left div img, .main .main__flex .main__partners .main__partners-right div img {
+    width: 120%;
+  }
+}
+@media (max-width: 768px) {
+  .header .header__flex .header__menu, .header .header__flex .header__icons {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
