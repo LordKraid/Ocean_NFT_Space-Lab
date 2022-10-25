@@ -27,6 +27,8 @@ body{
     font-family: 'Orbitron';
     font-weight: 700;
     color: #FFFFFF;
+
+    overflow-x: hidden;
 }
 
 ._content{
@@ -325,7 +327,6 @@ body{
             align-items: center;
 
             margin-bottom: 6.63px;
-
             span{padding: 0 3.32px;}
         }
 
@@ -408,7 +409,68 @@ body{
     }
 }
 
-//===
+//===Top-NFT===
+
+.top-NFT{
+    .top-NFT__h-flex{
+        margin-bottom: 50px;
+    }
+
+    .top-NFT__card-flex{
+        margin-bottom: 160px;
+
+        .card-flex__item{
+            .top-NFT__seller-card{
+                padding: 36px 25px 23px;
+            }
+        }
+    }
+}
+
+h2{
+    font-size: 26.531px;
+    line-height: 33px;
+}
+
+.h-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div{
+        display: flex;
+        align-items: center;
+
+        font-size: 26.531px;
+        line-height: 33px;
+
+        span{margin-right: 25px;}
+    }
+}
+
+.card-flex{
+    .swiper-wrapper{
+        display: flex;
+        justify-content: space-between;
+        //flex-grow: 1;
+        
+        .card-flex__item{
+            //display: flex;
+            //flex-direction: column;
+            margin-right: 20px;
+            flex-basis: 32%;
+            
+            .seller-card{
+                flex-grow: 1;
+                height: 220px;
+            }
+
+            .card-flex__item__img{
+                img{width: 100%;}
+            }
+        }
+    }
+}
 
 
 
