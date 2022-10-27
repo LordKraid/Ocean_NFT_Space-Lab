@@ -33,3 +33,13 @@ const swiperUserFlex = new Swiper('.users__card-flex', {
         nextEl: '.user__explore'
     }
 });
+
+function collectionBrandActive() {
+    document.querySelector('.collection__brand').classList.add('active')
+    document.querySelector('.collection__art').classList.remove('active')
+}
+
+function collectionArtActive() {
+    document.querySelector('.collection__art').classList.add('active')
+    document.querySelector('.collection__brand').classList.remove('active')
+}
