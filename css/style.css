@@ -367,11 +367,11 @@ h2 {
   width: 100%;
 }
 
+.users {
+  margin-bottom: 160px;
+}
 .users .users__h-flex {
   margin-bottom: 50px;
-}
-.users .content {
-  margin-bottom: 160px;
 }
 .users .user__user-card .card-flex__item__img {
   width: 100%;
@@ -470,6 +470,66 @@ h2 {
   margin-left: 4px;
 }
 
+.about {
+  background-image: url("../source/img/about_back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 556px;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  padding-right: 140px;
+  margin-bottom: 293px;
+}
+.about .about__info {
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(72.8013px);
+          backdrop-filter: blur(72.8013px);
+  border-radius: 2.88322px;
+  padding: 58px 48px 50px 71px;
+  display: inline-block;
+  margin-bottom: -133px;
+  /*
+  position: relative;
+  top: 216px;
+  left: 884px;
+  */
+}
+.about .about__info h1 {
+  font-family: "Inter";
+  font-weight: 800;
+  font-size: 44.5093px;
+  line-height: 60px;
+  font-feature-settings: "salt" on, "liga" off;
+  margin-bottom: 18px;
+}
+.about .about__info p {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20.0292px;
+  line-height: 36px;
+  font-feature-settings: "salt" on, "liga" off;
+  max-width: 460px;
+  margin-bottom: 45px;
+}
+.about .about__info .about__links {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  font-feature-settings: "salt" on, "liga" off;
+  display: flex;
+  align-items: center;
+}
+.about .about__info .about__links .about__video-link {
+  display: flex;
+  align-items: center;
+  margin-left: 45px;
+}
+.about .about__info .about__links .about__video-link svg {
+  margin-right: 9px;
+}
+
 @media (max-width: 1280px) {
   .main .main__flex .main__info {
     flex-basis: 51%;
@@ -533,5 +593,9 @@ h2 {
   }
   .explore-block {
     display: flex;
+  }
+  .about {
+    justify-content: center;
+    padding-right: 0;
   }
 }/*# sourceMappingURL=style.css.map */
