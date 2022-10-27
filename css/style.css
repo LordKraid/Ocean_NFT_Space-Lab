@@ -370,7 +370,7 @@ h2 {
 .users .users__h-flex {
   margin-bottom: 50px;
 }
-.users .user__user-card {
+.users .content {
   margin-bottom: 160px;
 }
 .users .user__user-card .card-flex__item__img {
@@ -444,6 +444,32 @@ h2 {
   padding: 11px 75px;
 }
 
+.explore-block {
+  display: none;
+  justify-content: center;
+  margin-top: 45px;
+}
+.explore-block .explore {
+  display: flex;
+  align-items: center;
+  background: none;
+  padding: 9px 7px 12px 28px;
+  box-shadow: 0px 2.35945px 57.2166px rgba(255, 86, 246, 0.51);
+  -webkit-backdrop-filter: blur(56.6267px);
+          backdrop-filter: blur(56.6267px);
+  border-radius: 1.17972px;
+}
+.explore-block .explore span {
+  font-family: "Orbitron";
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+.explore-block .explore svg {
+  margin-left: 4px;
+}
+
 @media (max-width: 1280px) {
   .main .main__flex .main__info {
     flex-basis: 51%;
@@ -501,5 +527,11 @@ h2 {
 @media (max-width: 768px) {
   .header .header__flex .header__menu, .header .header__flex .header__icons {
     display: none;
+  }
+  .h-flex div {
+    display: none;
+  }
+  .explore-block {
+    display: flex;
   }
 }/*# sourceMappingURL=style.css.map */
