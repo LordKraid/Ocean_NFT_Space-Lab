@@ -367,6 +367,83 @@ h2 {
   width: 100%;
 }
 
+.users .users__h-flex {
+  margin-bottom: 50px;
+}
+.users .user__user-card {
+  margin-bottom: 160px;
+}
+.users .user__user-card .card-flex__item__img {
+  width: 100%;
+}
+.users .user__user-card .user-card__flex {
+  margin-top: -100px;
+}
+
+.user-card {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.52%, rgba(255, 255, 255, 0.024) 104.35%);
+  -webkit-backdrop-filter: blur(39.6002px);
+          backdrop-filter: blur(39.6002px);
+}
+.user-card .user-card__flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 39px 40px;
+}
+.user-card .user-card__flex .user_card__ava {
+  margin-bottom: 15px;
+}
+.user-card .user-card__flex h3 {
+  font-family: "Rajdhani";
+  font-weight: 500;
+  font-size: 24.3201px;
+  line-height: 46px;
+}
+.user-card .user-card__flex .user-card__profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+}
+.user-card .user-card__flex .user-card__profile span {
+  font-family: "Rajdhani";
+  font-weight: 400;
+  font-size: 20.1601px;
+  line-height: 46px;
+  color: #FFB1EE;
+}
+.user-card .user-card__flex .user-card__profile img {
+  height: 100%;
+  margin-left: 5px;
+}
+.user-card .user-card__flex .user-card__statistic {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 25px;
+}
+.user-card .user-card__flex .user-card__statistic .user-card__statistic__column {
+  font-family: "Rajdhani";
+  font-weight: 500;
+  font-size: 19.8061px;
+  line-height: 30px;
+  opacity: 0.7;
+}
+.user-card .user-card__flex .user-card__statistic .user-card__statistic__column span {
+  font-family: "Rajdhani";
+  font-weight: 600;
+  font-size: 31.6897px;
+  line-height: 30px;
+}
+.user-card .user-card__flex button {
+  font-family: "Rajdhani";
+  font-weight: 600;
+  font-size: 19.8983px;
+  line-height: 25px;
+  padding: 11px 75px;
+}
+
 @media (max-width: 1280px) {
   .main .main__flex .main__info {
     flex-basis: 51%;

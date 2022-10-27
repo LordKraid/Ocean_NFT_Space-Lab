@@ -472,7 +472,105 @@ h2{
     }
 }
 
+//===Collections
 
+
+
+//===Users===
+
+.users{
+    .users__h-flex{
+        margin-bottom: 50px;
+    }
+
+    .user__user-card{
+        .card-flex__item__img{
+            width: 100%;
+        }
+
+        .user-card__flex{
+            margin-top: -100px;
+        }
+
+        margin-bottom: 160px;
+    }
+}
+
+.user-card{    
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.52%, rgba(255, 255, 255, 0.024) 104.35%);
+    backdrop-filter: blur(39.6002px);
+
+    .user-card__flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+            
+        padding: 0 39px 40px;
+    
+        .user_card__ava{
+            margin-bottom: 15px;
+        }
+    
+        h3{
+            font-family: 'Rajdhani';
+            font-weight: 500;
+            font-size: 24.3201px;
+            line-height: 46px;
+        }
+    
+        .user-card__profile{
+            display: flex;
+            align-items: center;
+            margin-bottom: 35px;
+    
+            span{
+                font-family: 'Rajdhani';
+                font-weight: 400;
+                font-size: 20.1601px;
+                line-height: 46px;
+                color: #FFB1EE;
+            }
+    
+            img{
+                height: 100%;
+                margin-left: 5px;
+            }
+        }
+    
+        .user-card__statistic{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+    
+            margin-bottom: 25px;
+    
+            .user-card__statistic__column{
+                font-family: 'Rajdhani';
+                font-weight: 500;
+                font-size: 19.8061px;
+                line-height: 30px;
+                opacity: 0.7;
+    
+                span{
+                    font-family: 'Rajdhani';
+                    font-weight: 600;
+                    font-size: 31.6897px;
+                    line-height: 30px;
+                }
+            }
+        }
+    
+        button{
+            font-family: 'Rajdhani';
+            font-weight: 600;
+            font-size: 19.8983px;
+            line-height: 25px;
+    
+            padding: 11px 75px;
+        }
+    }
+}
 
 
 
