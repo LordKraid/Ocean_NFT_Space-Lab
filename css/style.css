@@ -367,6 +367,47 @@ h2 {
   width: 100%;
 }
 
+.collection {
+  margin-bottom: 160px;
+}
+.collection .collection__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.collection .collection__flex .collection__left {
+  flex-grow: 60%;
+  width: 60%;
+}
+.collection .collection__flex .collection__left .collection__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  margin-top: 47px;
+}
+.collection .collection__flex .collection__left .collection__grid .collection__grid__item .collection__button {
+  font-size: 26.531px;
+  line-height: 33px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  background: none;
+  padding: 33px 30px;
+  width: 95%;
+  margin-bottom: 43px;
+  border: 2px solid gray;
+}
+.collection .collection__flex .collection__left .collection__grid .right {
+  margin-right: 43px;
+}
+.collection .collection__flex .collection__left .collection__view {
+  justify-content: end;
+  width: 95%;
+}
+.collection .collection__flex .collection__left .collection__view div {
+  font-size: 19.8983px;
+  line-height: 25px;
+}
+
 .users {
   margin-bottom: 160px;
 }
@@ -662,6 +703,18 @@ h2 {
   }
   .main .main__flex .main__partners .main__partners-left div img, .main .main__flex .main__partners .main__partners-right div img {
     width: 120%;
+  }
+  .collection .collection__flex {
+    flex-direction: column;
+  }
+  .collection .collection__flex .collection__left {
+    width: 100%;
+  }
+  .collection .collection__flex .collection__left .collection__grid {
+    margin-top: 47px;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
   }
   .subscribe .subscribe__flex {
     display: flex;
