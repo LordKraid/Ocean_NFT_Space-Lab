@@ -34,6 +34,26 @@ const swiperUserFlex = new Swiper('.users__card-flex', {
     }
 });
 
+const swiperSellers = new Swiper('.top-sellers__swiper', {
+    breakpoints: {
+        992: {
+            slidesPerView: 3,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        0: {
+            slidesPerView: 1,
+        }
+    },
+
+    navigation: {
+        nextEl: '.top-sellers__explore'
+    }
+});
+
+
+
 function collectionBrandActive() {
     document.querySelector('.collection__brand').classList.add('active')
     document.querySelector('.collection__art').classList.remove('active')

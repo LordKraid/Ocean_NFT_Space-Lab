@@ -670,6 +670,136 @@ h2{
     }
 }
 
+//===Top-Sellers===
+
+.top-sellers{
+    margin-bottom: 160px;
+
+    .top-sellers__header{
+        text-align: center;
+
+        h1{
+            display: flex;
+            align-items: center;
+    
+            margin-bottom: 23px;
+    
+            font-size: 26.531px;
+            line-height: 33px;
+            justify-content: center;
+    
+            span{
+                color: #FF56F6;
+                margin: 0 8px;
+            }
+        }
+    
+        p{
+            font-family: 'Roboto';
+            font-weight: 400;
+            font-size: 17.6873px;
+            line-height: 25px;
+    
+            max-width: 510px;
+            margin-bottom: 40px;
+            display: inline-block;
+        }
+    }
+
+    .top-sellers__swiper{
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 25px;
+        
+        .swiper-wrapper{
+            justify-content: space-between;
+        }
+
+        .swiper-slide{
+            padding: 0 10px;
+
+            .top-sellers__seller{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                font-family: 'Roboto';
+                font-weight: 500;
+
+                margin-bottom: 35px;
+
+                backdrop-filter: blur(37.9079px);
+                border-radius: 28.5719px;
+                border: 2px gray solid;
+
+                padding: 27px 20px 26px 29px;
+
+                .seller__profile{
+                    display: flex;
+                    align-items: center;
+
+                    .seller__info{
+                        display: flex;
+                        flex-direction: column;
+    
+                        margin-left: 13px;
+    
+                        h3{
+                            font-size: 19.0479px;
+                            line-height: 30px;
+                        }
+    
+                        .seller__ETH{
+                            display: flex;
+                            align-items: center;
+    
+                            span{
+                                font-size: 13.7568px;
+                                line-height: 30px;
+                                color: rgba(255, 255, 255, 0.8);
+
+                                margin-left: 4px;
+                            }
+                        }
+                    }
+                }
+
+                .seller__procent{
+                    font-size: 14.7012px;
+                    line-height: 25px;
+                    color: #00FF66;
+
+                    padding: 6.5px 17px 7.5px;
+
+                    background: rgba(0, 179, 71, 0.15);
+                    border-radius: 17.5283px;
+
+                    flex-grow: 50%;
+                }
+
+                .red{
+                    background: linear-gradient(180deg, rgba(235, 20, 20, 0.15) 0%, rgba(235, 20, 20, 0.1005) 100%);
+                    color: #FF0000;
+
+                }
+            }
+        }
+    }
+
+    .top-sellers__explore-button-block{
+        text-align: center;
+
+        button{
+            padding: 11px 74px;
+
+            font-family: 'Rajdhani';
+            font-weight: 600;
+            font-size: 19.8983px;
+            line-height: 25px;
+        }
+    }
+}
+
 //===About===
 
 .about{
@@ -961,6 +1091,12 @@ h2{
     }
 
     .explore-block{display: flex;}
+
+    .top-sellers{
+        .top-sellers__explore-button-block{
+            display: none;
+        }
+    }
 
     .about{
         justify-content: center;
