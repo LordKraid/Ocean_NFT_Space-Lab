@@ -826,6 +826,12 @@ h2 {
     width: 100%;
     text-align: center;
   }
+  .top-sellers .top-sellers__explore-block {
+    display: flex;
+  }
+  .top-sellers .top-sellers__explore-button-block {
+    display: none;
+  }
   .subscribe .subscribe__flex {
     display: flex;
     justify-content: center;
@@ -850,9 +856,6 @@ h2 {
   }
   .explore-block {
     display: flex;
-  }
-  .top-sellers .top-sellers__explore-button-block {
-    display: none;
   }
   .about {
     justify-content: center;

@@ -1055,6 +1055,16 @@ h2{
         }
     }
 
+    .top-sellers{
+        .top-sellers__explore-block{
+            display: flex;
+        }
+
+        .top-sellers__explore-button-block{
+            display: none;
+        }
+    }
+
     .subscribe{
         .subscribe__flex{
             display: flex;
@@ -1091,12 +1101,6 @@ h2{
     }
 
     .explore-block{display: flex;}
-
-    .top-sellers{
-        .top-sellers__explore-button-block{
-            display: none;
-        }
-    }
 
     .about{
         justify-content: center;
