@@ -1,6 +1,6 @@
 @import url(null.css);
 @import url(preloader.css);
-@import url("https://fonts.googleapis.com/css2?family=Aldrich&family=Inter:wght@400;500;800&family=League+Spartan:wght@600&family=Orbitron:wght@700&family=Rajdhani:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&family=Inter:wght@400;500;800&family=League+Spartan:wght@600&family=MuseoModerno&family=Orbitron:wght@700&family=Rajdhani:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap");
 /*
 font-family: 'Aldrich', sans-serif;
 font-family: 'Inter', sans-serif;
@@ -8,6 +8,7 @@ font-family: 'League Spartan', sans-serif;
 font-family: 'Orbitron', sans-serif;
 font-family: 'Rajdhani', sans-serif;
 font-family: 'Roboto', sans-serif;
+font-family: 'MuseoModerno', cursive;
 */
 html {
   scroll-behavior: smooth;
@@ -28,7 +29,7 @@ body {
 }
 
 ._content {
-  max-width: 1290px;
+  max-width: 1340px;
   padding: 0 25px;
   margin: 0 auto;
 }
@@ -761,6 +762,120 @@ h2 {
   height: 53px;
 }
 
+.footer .footer__content {
+  margin: 0 auto;
+  max-width: 1390px;
+  padding: 0 25px;
+}
+.footer .footer-line {
+  border-top: solid white 1px;
+  opacity: 0.2;
+}
+.footer .footer__top {
+  margin-bottom: 85px;
+}
+.footer .footer__top .footer-top__line {
+  margin-bottom: 100px;
+}
+.footer .footer__top .footer-top__flex {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer__top .footer-top__flex .footer-top__info {
+  flex-basis: 25%;
+}
+.footer .footer__top .footer-top__flex .footer-top__info .footer-top__logo {
+  display: flex;
+  align-items: center;
+  font-size: 19.8983px;
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+.footer .footer__top .footer-top__flex .footer-top__info .footer-top__logo img {
+  margin-right: 5px;
+}
+.footer .footer__top .footer-top__flex .footer-top__info p {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15.4764px;
+  line-height: 27px;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #D9DBE1;
+  margin-bottom: 25px;
+  max-width: 278px;
+}
+.footer .footer__top .footer-top__flex .footer-top__info .footer-top__info__social {
+  display: flex;
+  align-items: center;
+}
+.footer .footer__top .footer-top__flex .footer-top__info .footer-top__info__social a {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  padding: 10px;
+  margin-right: 17px;
+}
+.footer .footer__top .footer-top__flex .footer-top__links {
+  flex-basis: 75%;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.footer .footer__top .footer-top__flex .footer-top__links .footer-links__column h3 {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 19.8983px;
+  line-height: 31px;
+  font-feature-settings: "salt" on, "liga" off;
+  margin-bottom: 17.7px;
+}
+.footer .footer__top .footer-top__flex .footer-top__links .footer-links__column .columns__links h5 {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15.4764px;
+  line-height: 27px;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #D9DBE1;
+  margin-bottom: 13.5px;
+}
+.footer .footer__top .footer-top__flex .footer-top__links .footer-links__column .columns__links .new::after {
+  content: "new";
+  margin-left: 8px;
+  font-family: "MuseoModerno";
+  font-weight: 400;
+  font-size: 22.1092px;
+  line-height: 27px;
+  color: #2EC5CE;
+}
+.footer .footer__bottom {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15.4764px;
+  line-height: 27px;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #D9DBE1;
+  margin-bottom: 40px;
+}
+.footer .footer__bottom .footer-bottom__line {
+  margin-bottom: 25px;
+}
+.footer .footer__bottom .footer-bottom__flex {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer__bottom .footer-bottom__flex .footer-bottom__flex__right .line {
+  margin: 0 8px;
+}
+.footer .footer__bottom .footer-bottom__flex .footer-bottom__flex__right a {
+  transition: 0.1s;
+}
+.footer .footer__bottom .footer-bottom__flex .footer-bottom__flex__right a:hover {
+  text-decoration: underline;
+  color: #FFFFFF;
+}
+.footer .footer__bottom .footer-bottom__flex .footer-bottom__flex__right a:active {
+  color: #D9DBE1;
+}
+
 @media (max-width: 1280px) {
   .main .main__flex .main__info {
     flex-basis: 51%;
@@ -863,5 +978,19 @@ h2 {
   }
   .subscribe .subscribe__flex .subscribe__img {
     width: 100%;
+  }
+  .footer .footer__bottom .footer-bottom__flex {
+    flex-direction: column;
+  }
+  .footer .footer__bottom .footer-bottom__flex p {
+    order: 2;
+  }
+  .footer .footer__bottom .footer-bottom__flex .footer-bottom__flex__right {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  .footer .footer__bottom .footer-bottom__flex .footer-bottom__flex__right .line, .footer .footer__bottom .footer-bottom__flex .footer-bottom__flex__right .sitemap {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
