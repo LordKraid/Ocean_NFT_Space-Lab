@@ -63,3 +63,15 @@ function collectionArtActive() {
     document.querySelector('.collection__art').classList.add('active')
     document.querySelector('.collection__brand').classList.remove('active')
 }
+
+
+
+let checkbox = document.getElementById('menu-toggle')
+
+checkbox.onclick = () => {
+    if (checkbox.checked) {
+        document.body.style.overflow = 'hidden';
+    } else{
+        document.body.style.overflow = 'visible';
+    }
+}
