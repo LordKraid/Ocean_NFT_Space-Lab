@@ -75,3 +75,46 @@ checkbox.onclick = () => {
         document.body.style.overflow = 'visible';
     }
 }
+
+
+
+function footerOpen(count) {
+    switch(count){
+        case 1:
+            if(document.querySelector('.market-place').classList[2]){
+                document.querySelector('.market-place').classList.remove('open')
+            } else{
+                document.querySelector('.market-place').classList.add('open')
+            }
+            break
+        case 2:
+            if(document.querySelector('.collectibles').classList[2]){
+                document.querySelector('.collectibles').classList.remove('open')
+            } else{
+                document.querySelector('.collectibles').classList.add('open')
+            }
+            break
+        case 3:
+            if(document.querySelector('.support').classList[2]){
+                document.querySelector('.support').classList.remove('open')
+            } else{
+                document.querySelector('.support').classList.add('open')
+            }
+            break
+        case 4:
+            if(document.querySelector('.legal').classList[2]){
+                document.querySelector('.legal').classList.remove('open')
+            } else{
+                document.querySelector('.legal').classList.add('open')
+            }
+            break
+        case 5:
+            if(document.querySelector('.follow').classList[2]){
+                document.querySelector('.follow').classList.remove('open')
+            } else{
+                document.querySelector('.follow').classList.add('open')
+            }
+            break
+    }
+    
+}

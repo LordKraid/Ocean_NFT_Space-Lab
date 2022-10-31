@@ -1176,7 +1176,11 @@ h2{
                         font-feature-settings: 'salt' on, 'liga' off;
 
                         margin-bottom: 17.7px;
+
+                        img{display: none;}
                     }
+
+                    .footer-line{display: none;}
 
                     .columns__links{
                         a{
@@ -1374,6 +1378,55 @@ h2{
         }
     }
     
+    .footer{
+        .footer__top{
+            .footer-top__flex{
+                flex-direction: column;
+                //align-items: center;
+
+                .footer-top__info{
+                    margin-bottom: 50px;
+                }
+
+                .footer-top__links{
+                    flex-direction: column;
+                    align-items: center;
+
+                    .footer-links__column{
+                        width: 100%;
+
+                        h3{
+                            margin-bottom: 20px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+
+                            cursor: pointer;
+
+                            img{
+                                display: block;
+                                margin-right: 5px;
+                            }
+                        }
+
+                        .columns__links{
+                            display: none;
+                            transition: 0.5s;
+                        }
+
+                        .columns__links.open{
+                            display: block;
+                        }
+
+                        .footer-line{
+                            display: block;
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media(max-width: 768px){
