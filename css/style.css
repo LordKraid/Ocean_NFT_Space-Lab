@@ -230,15 +230,37 @@ body {
 }
 .main .main__flex .main__NFT {
   margin-left: 50px;
+  /*.main__NFT__seller-card:before {
+      border-right: solid 2px rgba(255, 255, 255, 0.3);
+      width: 50px;
+      height: 70px;
+      content: '';
+      position: absolute;
+      transform: rotate(48deg);
+      left: -16px;
+      top: -31px;
+      background: rgba($color: #FFFFFF, $alpha: 1);
+  }*/
 }
 .main .main__flex .main__NFT .main__NFT-pictures {
   box-shadow: 1px 3px 5px black;
   border-radius: 20px;
   display: inline-block;
+  position: relative;
 }
 .main .main__flex .main__NFT .main__NFT-pictures img {
   border-radius: 20px;
   width: 100%;
+}
+.main .main__flex .main__NFT .main__NFT-pictures:before {
+  background-color: rgb(32, 8, 59);
+  width: 70px;
+  height: 160px;
+  content: "";
+  position: absolute;
+  transform: rotate(55deg);
+  left: 0px;
+  top: -70px;
 }
 .main .main__flex .main__NFT .main__NFT__seller-card {
   border-radius: 8.84367px;
@@ -299,7 +321,11 @@ body {
 .info .info__buttons .button_border-slesh svg {
   margin-left: 5px;
 }
+.info .info__buttons .button_border-slesh:hover {
+  background: linear-gradient(92.23deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+}
 .info .info__buttons .info__create {
+  display: inline-block;
   background: linear-gradient(89.89deg, #42A6E3 2.33%, #FF56F6 101.4%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -307,6 +333,13 @@ body {
   font-size: 19.8983px;
   line-height: 25px;
   margin-left: 37px;
+  transition: 0.2s;
+}
+.info .info__buttons .info__create:hover {
+  background: linear-gradient(89.89deg, #FF56F6 2.33%, #42A6E3 101.4%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .button {
@@ -315,6 +348,7 @@ body {
   font-family: "Orbitron";
   font-weight: 700;
   color: #FFFFFF;
+  transition: 0.1s;
 }
 .button a {
   display: flex;
@@ -323,6 +357,16 @@ body {
 }
 .button a svg {
   margin-left: 10px;
+}
+
+.button:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 4.42184px 90px rgba(255, 86, 246, 0.7);
+  background: linear-gradient(89.89deg, #42A6E3 2.33%, #FF56F6 101.4%);
+}
+
+.button:active {
+  transform: scale(0.95);
 }
 
 .statistic {
@@ -362,6 +406,7 @@ body {
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.52%, rgba(255, 255, 255, 0.024) 104.35%);
   -webkit-backdrop-filter: blur(30.4001px);
           backdrop-filter: blur(30.4001px);
+  border: solid 2px rgba(255, 255, 255, 0.3);
 }
 .seller-card .seller-card__column1 h2 {
   font-weight: 700;
@@ -455,22 +500,32 @@ body {
 
 h2 {
   font-size: 26.531px;
-  line-height: 33px;
+  line-height: 40px;
 }
 
 .h-flex {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .h-flex div {
   display: flex;
   align-items: center;
   font-size: 26.531px;
-  line-height: 33px;
+  line-height: 30px;
 }
 .h-flex div span {
   margin-right: 25px;
+}
+.h-flex a {
+  background-image: linear-gradient(89.89deg, #FF56F6 2.33%, #42A6E3 101.4%);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+  padding-bottom: 10px;
+}
+.h-flex a:hover {
+  background-size: 100% 2px;
 }
 
 .card-flex .swiper-wrapper {
@@ -517,6 +572,11 @@ h2 {
   width: 95%;
   margin-bottom: 43px;
   border: 2px solid gray;
+  transition: 0.1s;
+}
+.collection .collection__flex .collection__left .collection__grid .collection__grid__item .active, .collection .collection__flex .collection__left .collection__grid .collection__grid__item .collection__button:hover {
+  color: rgb(255, 255, 255);
+  background: linear-gradient(92.23deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
 }
 .collection .collection__flex .collection__left .collection__grid .right {
   margin-right: 43px;
@@ -802,6 +862,12 @@ h2 {
 }
 .about .about__info .about__links .about__video-link svg {
   margin-right: 9px;
+}
+.about .about__info .about__links a {
+  transition: 0.2s;
+}
+.about .about__info .about__links a:hover {
+  text-decoration: underline;
 }
 
 .subscribe .subscribe__flex {

@@ -55,11 +55,17 @@ const swiperSellers = new Swiper('.top-sellers__swiper', {
 
 
 function collectionBrandActive() {
+    document.querySelector('.grid__brand').classList.add('active')
+    document.querySelector('.grid__art').classList.remove('active')
+
     document.querySelector('.collection__brand').classList.add('active')
     document.querySelector('.collection__art').classList.remove('active')
 }
 
 function collectionArtActive() {
+    document.querySelector('.grid__art').classList.add('active')
+    document.querySelector('.grid__brand').classList.remove('active')
+
     document.querySelector('.collection__art').classList.add('active')
     document.querySelector('.collection__brand').classList.remove('active')
 }
