@@ -20,8 +20,6 @@ body {
 
 .wrapper {
   background: rgb(32, 8, 59);
-  -webkit-backdrop-filter: blur(92.3058px);
-          backdrop-filter: blur(92.3058px);
   font-family: "Orbitron";
   font-weight: 700;
   color: #FFFFFF;
@@ -155,6 +153,9 @@ body {
   left: 0;
   width: 100%;
   padding: 50px 0;
+  transition: 0.2s;
+  z-index: 10;
+  background: rgba(32, 8, 59, 0.9);
 }
 .header .header__flex {
   display: flex;
@@ -219,6 +220,15 @@ body {
   transition: 0.1s;
 }
 
+.scrolled {
+  transition: 0.2s;
+  padding: 25px 0;
+  box-shadow: 1px 5px 6px rgba(0, 0, 0, 0.2);
+}
+.scrolled .burger-menu .menu-btn {
+  top: 35px;
+}
+
 .main .main__flex {
   display: flex;
   flex-wrap: wrap;
@@ -230,17 +240,6 @@ body {
 }
 .main .main__flex .main__NFT {
   margin-left: 50px;
-  /*.main__NFT__seller-card:before {
-      border-right: solid 2px rgba(255, 255, 255, 0.3);
-      width: 50px;
-      height: 70px;
-      content: '';
-      position: absolute;
-      transform: rotate(48deg);
-      left: -16px;
-      top: -31px;
-      background: rgba($color: #FFFFFF, $alpha: 1);
-  }*/
 }
 .main .main__flex .main__NFT .main__NFT-pictures {
   box-shadow: 1px 3px 5px black;
@@ -269,6 +268,18 @@ body {
   position: relative;
   top: -120px;
   left: 155px;
+  -webkit-clip-path: polygon(70px 0, 100% 0, 100% calc(100% - 0px), calc(100% - 45px) 100%, 0 100%, 0 45px);
+          clip-path: polygon(70px 0, 100% 0, 100% calc(100% - 0px), calc(100% - 45px) 100%, 0 100%, 0 45px);
+}
+.main .main__flex .main__NFT .main__NFT__seller-card:before {
+  border-right: solid 2px rgba(255, 255, 255, 0.3);
+  width: 50px;
+  height: 120px;
+  content: "";
+  position: absolute;
+  transform: rotate(57deg);
+  left: -16px;
+  top: -51px;
 }
 .main .main__flex .main__partners {
   display: flex;
@@ -308,6 +319,17 @@ body {
 }
 .info .info__buttons {
   margin-bottom: 70px;
+  /*
+          .button_border-slesh:before {
+              width: 50px;
+              height: 70px;
+              content: '';
+              position: absolute;
+              transform: rotate(60deg);
+              left: -15px;
+              top: -40px;
+              background: rgba(32, 8, 59, 1);
+          }*/
 }
 .info .info__buttons .button_border-slesh {
   background: linear-gradient(89.89deg, #42A6E3 2.33%, #FF56F6 101.4%);
@@ -317,6 +339,8 @@ body {
   font-size: 19.8983px;
   line-height: 25px;
   padding: 20px 32px 19px 67px;
+  -webkit-clip-path: polygon(40px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 40px) 100%, 0 100%, 0 20px);
+          clip-path: polygon(40px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 40px) 100%, 0 100%, 0 20px);
 }
 .info .info__buttons .button_border-slesh svg {
   margin-left: 5px;
@@ -823,6 +847,7 @@ h2 {
   padding: 58px 48px 50px 71px;
   display: inline-block;
   margin-bottom: -133px;
+  border: solid 2px rgba(192, 192, 192, 0.7);
   /*
   position: relative;
   top: 216px;
