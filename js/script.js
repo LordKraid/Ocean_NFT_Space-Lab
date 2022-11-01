@@ -130,3 +130,33 @@ window.addEventListener('scroll', function() {
     if (window.pageYOffset > 0) {document.querySelector('header').classList.add('scrolled')}
     else {document.querySelector('header').classList.remove('scrolled')}
   });
+
+
+  
+  
+setInterval(() => counters(), 1000);
+
+function counters(){
+    let hour
+    let minutes
+    let second
+
+    let countersArr = document.querySelectorAll('.seller-card__counter')
+
+    for (let counter of countersArr) {        
+        second = counter.children[2].firstElementChild.innerHTML
+        minutes = counter.children[1].firstElementChild.innerHTML
+        hour = counter.children[0].firstElementChild.innerHTML
+
+        if (second - 1 >= 0) {
+            counter.children[2].firstElementChild.innerHTML = second - 1
+        } else if (minutes - 1 >= 0) {
+            counter.children[2].firstElementChild.innerHTML = 60
+            counter.children[1].firstElementChild.innerHTML = minutes - 1
+        } else {
+            counter.children[2].firstElementChild.innerHTML = 60
+            counter.children[1].firstElementChild.innerHTML = 60
+            counter.children[0].firstElementChild.innerHTML = hours - 1
+        }
+    }
+}
