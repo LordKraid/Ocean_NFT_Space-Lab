@@ -461,6 +461,7 @@ body{
     font-family: 'Orbitron';
     font-weight: 700;
     color: #FFFFFF;
+    position: relative;
 
     transition: 0.1s;
 
@@ -481,6 +482,20 @@ body{
 
 .button:active{
     transform: scale(0.95);
+}
+
+.button::before{
+    content: '';
+    background: linear-gradient(89.89deg, #42A6E3 2.33%, #FF56F6 101.4%);
+    
+    position: absolute;
+
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+
+    z-index: -1;
 }
 
 .statistic{
@@ -610,7 +625,7 @@ body{
             }
         }
 
-        .seller-card__button{
+        .seller-card__button, .button::before{
             font-family: 'Rajdhani';
             font-weight: 600;
             font-size: 17.6873px;
@@ -895,26 +910,16 @@ h2{
 
         position: relative;
 
-        padding: 9px 7px 12px 28px;
+        padding: 9px 30px 12px 40px;
 
         box-shadow: 0px 2.35945px 57.2166px rgba(255, 86, 246, 0.51);
        // backdrop-filter: blur(56.6267px);
         border-radius: 1.17972px;
 
+        clip-path: polygon(40px 0,100% 0,100% calc(100% - 20px), calc(100% - 40px) 100%,0 100%,0 20px);
+
         //clip-path: polygon(40px 0,100% 0,100% calc(100% - 20px), calc(100% - 40px) 100%,0 100%,0 20px);
-        border: solid 2px rgba(255, 255, 255, 0.3);
-    
-        .explore:before {
-            //border-right: solid 2px rgba(255, 255, 255, 0.3);
-            width: 1000px;
-            height: 120px;
-            content: '';
-            position: absolute;
-            transform: rotate(57deg);
-            left: 10px;
-            top: 10px;
-            background: rgba($color: #FFFFFF, $alpha: 1);
-        }
+        border: solid 2px #FFA6FA;
 
         span{
             font-family: 'Orbitron';
@@ -925,6 +930,32 @@ h2{
         }
     
         svg{margin-left: 4px;}
+    }
+
+    .explore:before {
+        border: solid 2px #FFA6FA;
+        width: 25px;
+        height: 120px;
+        content: '';
+        position: absolute;
+        z-index: 10;
+
+        transform: rotate(63deg);
+        left: -16px;
+        top: -53px;
+    }
+
+    .explore::after {
+        border: solid 2px #FFA6FA;
+        width: 25px;
+        height: 120px;
+        content: '';
+        position: absolute;
+        z-index: 10;
+
+        transform: rotate(63deg);
+        right: -16px;
+        bottom: -53px;
     }
 }
 
@@ -1212,7 +1243,7 @@ h2{
                     color: #474A57;
                 }
 
-                button{
+                .subscribe__button{
                     font-family: 'Inter';
                     font-weight: 500;
                     font-size: 15.4764px;
@@ -1223,6 +1254,9 @@ h2{
                     padding: 11px 33px 15px;
 
                     height: 53px;
+
+                    border: solid 2px rgba($color: #FFFFFF, $alpha: 0.7);
+
                 }
             }
         }
