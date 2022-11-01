@@ -893,12 +893,29 @@ h2{
         align-items: center;
         background: none;
 
+        position: relative;
+
         padding: 9px 7px 12px 28px;
 
         box-shadow: 0px 2.35945px 57.2166px rgba(255, 86, 246, 0.51);
-        backdrop-filter: blur(56.6267px);
+       // backdrop-filter: blur(56.6267px);
         border-radius: 1.17972px;
+
+        //clip-path: polygon(40px 0,100% 0,100% calc(100% - 20px), calc(100% - 40px) 100%,0 100%,0 20px);
+        border: solid 2px rgba(255, 255, 255, 0.3);
     
+        .explore:before {
+            //border-right: solid 2px rgba(255, 255, 255, 0.3);
+            width: 1000px;
+            height: 120px;
+            content: '';
+            position: absolute;
+            transform: rotate(57deg);
+            left: 10px;
+            top: 10px;
+            background: rgba($color: #FFFFFF, $alpha: 1);
+        }
+
         span{
             font-family: 'Orbitron';
             font-weight: 700;
@@ -1497,6 +1514,8 @@ h2{
     
     .footer{
         .footer__top{
+            margin-bottom: 30px;
+
             .footer-top__flex{
                 flex-direction: column;
                 //align-items: center;
@@ -1542,6 +1561,10 @@ h2{
                     }
                 }
             }
+        }
+
+        .footer__bottom{
+            .footer-bottom__line{display: none;}
         }
     }
 }

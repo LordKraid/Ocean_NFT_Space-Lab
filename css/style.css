@@ -713,11 +713,21 @@ h2 {
   display: flex;
   align-items: center;
   background: none;
+  position: relative;
   padding: 9px 7px 12px 28px;
   box-shadow: 0px 2.35945px 57.2166px rgba(255, 86, 246, 0.51);
-  -webkit-backdrop-filter: blur(56.6267px);
-          backdrop-filter: blur(56.6267px);
   border-radius: 1.17972px;
+  border: solid 2px rgba(255, 255, 255, 0.3);
+}
+.explore-block .explore .explore:before {
+  width: 1000px;
+  height: 120px;
+  content: "";
+  position: absolute;
+  transform: rotate(57deg);
+  left: 10px;
+  top: 10px;
+  background: white;
 }
 .explore-block .explore span {
   font-family: "Orbitron";
@@ -1196,6 +1206,9 @@ h2 {
     height: 380px;
     margin-top: 100px;
   }
+  .footer .footer__top {
+    margin-bottom: 30px;
+  }
   .footer .footer__top .footer-top__flex {
     flex-direction: column;
   }
@@ -1230,6 +1243,9 @@ h2 {
   .footer .footer__top .footer-top__flex .footer-top__links .footer-links__column .footer-line {
     display: block;
     margin-bottom: 15px;
+  }
+  .footer .footer__bottom .footer-bottom__line {
+    display: none;
   }
 }
 @media (max-width: 768px) {
