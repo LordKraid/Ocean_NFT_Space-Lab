@@ -53,25 +53,6 @@ const swiperSellers = new Swiper('.top-sellers__swiper', {
 });
 
 
-
-function collectionBrandActive() {
-    document.querySelector('.grid__brand').classList.add('active')
-    document.querySelector('.grid__art').classList.remove('active')
-
-    document.querySelector('.collection__brand').classList.add('active')
-    document.querySelector('.collection__art').classList.remove('active')
-}
-
-function collectionArtActive() {
-    document.querySelector('.grid__art').classList.add('active')
-    document.querySelector('.grid__brand').classList.remove('active')
-
-    document.querySelector('.collection__art').classList.add('active')
-    document.querySelector('.collection__brand').classList.remove('active')
-}
-
-
-
 let checkbox = document.getElementById('menu-toggle')
 
 checkbox.onclick = () => {
@@ -159,4 +140,40 @@ function counters(){
             counter.children[0].firstElementChild.innerHTML = hours - 1
         }
     }
+}
+
+
+
+function collectionBrandActive() {
+    document.querySelector('.grid__brand').classList.add('active')
+    document.querySelector('.grid__art').classList.remove('active')
+
+    document.querySelector('.collection__brand').classList.add('active')
+    document.querySelector('.collection__art').classList.remove('active')
+}
+
+function collectionArtActive() {
+    document.querySelector('.grid__art').classList.add('active')
+    document.querySelector('.grid__brand').classList.remove('active')
+
+    document.querySelector('.collection__art').classList.add('active')
+    document.querySelector('.collection__brand').classList.remove('active')
+}
+
+
+
+function ButtonActive(buttonNum) {
+    let gridButton = document.querySelector('.collection__grid')
+
+    for (let i = 0; i < 8; i++) {
+        if (gridButton.children[i].firstElementChild.classList[2] = 'active') {
+            gridButton.children[i].firstElementChild.classList.remove('active')
+            document.querySelector('.collection__img').children[i].classList.remove('active')
+        }
+    }
+
+    gridButton.children[buttonNum].firstElementChild.classList.add('active')
+    document.querySelector('.collection__img').children[buttonNum].classList.add('active')
+
+    document.querySelector('collection__img')
 }

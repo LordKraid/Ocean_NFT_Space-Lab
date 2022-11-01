@@ -1213,6 +1213,12 @@ h2{
                 }
 
                 button{
+                    font-family: 'Inter';
+                    font-weight: 500;
+                    font-size: 15.4764px;
+                    line-height: 22px;
+                    font-feature-settings: 'salt' on, 'liga' off;
+
                     border-radius: 0px 5.5273px 5.5273px 0px;
                     padding: 11px 33px 15px;
 
@@ -1421,7 +1427,7 @@ h2{
             flex-wrap: nowrap;
 
             .main__info{
-                text-align: center;
+                //text-align: center;
 
                 .info__statistic{
                     margin: 0 auto;
@@ -1633,6 +1639,13 @@ h2{
     .about{
         justify-content: center;
         padding-right: 0;
+
+        .about__info{
+            width: 85%;
+            padding: 40px 30px;
+
+            p{max-width: 100%;}
+        }
     }
 
     .subscribe{
@@ -1679,14 +1692,14 @@ h2{
 
                     .button_border-slesh{
                         display: flex;
-                        padding: 10px 15px;
-                        font-size: 18px;
+                        padding: 15px 20px;
+                        font-size: 16px;
                         align-items: center;
                     }
 
                     .info__create{
-                        font-size: 18px;
-                        margin-left: 5px;
+                        font-size: 16px;
+                        margin-left: 10px;
                     }
                 }
 
