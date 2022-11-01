@@ -550,6 +550,10 @@ body{
         .card-flex__item{
             .top-NFT__seller-card{
                 padding: 36px 25px 23px;
+
+                .seller-card__column1{margin-right: 15px;}
+
+                .seller-card__column2{min-width: 120px;}
             }
         }
     }
@@ -748,6 +752,8 @@ h2{
                 font-size: 19.8061px;
                 line-height: 30px;
                 opacity: 0.7;
+
+                margin: 0 5px;
     
                 span{
                     font-family: 'Rajdhani';
@@ -1444,6 +1450,52 @@ h2{
 
     .explore-block{display: flex;}
 
+    .top-NFT{
+        .top-NFT__card-flex{
+            .swiper-wrapper{
+                .swiper-slide{
+                    .seller-card{
+                        padding: 20px;
+
+                        .seller-card__column1{
+                            width: 55%;
+                            margin-right: 10px;
+                            
+                            h2{font-size: 14px;}
+                        }
+
+                        .seller-card__column2{
+                            width: 120px;
+
+                            .seller-card__button{
+                                padding: 5px;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .user-card{
+        .user-card__flex{
+            .user-card__statistic{
+                .user-card__statistic__column{
+                    font-size: 16px;
+                    line-height: 30px;
+    
+                    margin: 0 2px;
+        
+                    span{
+                        font-size: 22px;
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+    }
+
     .about{
         justify-content: center;
         padding-right: 0;
@@ -1477,5 +1529,222 @@ h2{
 }
 
 @media(max-width: 576px){
+    .main{
+        .main__flex{
+            margin-bottom: 100px;
 
+            .main__info{
+                h1{font-size: 48px;}
+
+                p{font-size: 24px;}
+
+                .info__buttons{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+
+                    .button_border-slesh{
+                        display: flex;
+                        padding: 10px 15px;
+                        font-size: 18px;
+                        align-items: center;
+                    }
+
+                    .info__create{
+                        font-size: 18px;
+                        margin-left: 5px;
+                    }
+                }
+
+                .info__statistic{
+                    .statistic__item{
+                        h2{font-size: 28px;}
+                        
+                        h3{font-size: 18px;}
+                    }
+                }                
+            }
+        }
+    }
+
+    .top-NFT{
+        .top-NFT__card-flex{
+            .swiper-wrapper{
+                .swiper-slide{
+                    .seller-card{
+                        padding: 20px;
+
+                        .seller-card__column1{
+                            width: 55%;
+                            margin-right: 10px;
+                            
+                            h2{font-size: 14px;}
+                        }
+
+                        .seller-card__column2{
+                            width: 120px;
+
+                            .seller-card__button{
+                                padding: 5px;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .collection{
+        margin-bottom: 80px;
+
+        .collection__flex{
+            .collection__left{
+                .collection__grid{
+                    .collection__grid__item{
+                        .collection__button{
+                            font-size: 18px;
+                            padding: 10px 15px;
+                        }
+                    }
+                }
+            }
+
+            .collection__img{
+                img{
+                    width: 100%;
+                }
+
+                .collection__brand{
+                    img{height: 50%;}
+                }
+            }
+        }
+    }
+
+    .users{
+        .users__card-flex{
+            .swiper-wrapper{
+                .swiper-slide{
+                    .user-card{
+                        .user-card__flex{
+                            h3{
+                                font-size: 24px;
+                                margin-bottom: -10px;
+                            }
+
+                            .user-card__statistic{
+                                .user-card__statistic__column{
+                                    font-size: 14px;
+
+                                    span{font-size: 24px;}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .top-sellers{
+        .top-sellers__header{
+            h1{
+                font-size: 24px;
+            }
+
+            p{
+                font-size: 16px;
+            }
+        }
+
+        .top-sellers__swiper{
+            .swiper-wrapper{
+                .swiper-slide{
+                    .top-sellers__seller{
+                        padding: 15px 10px;
+
+                        .seller__profile{
+                            img{
+                                width: 25%;
+                            }
+
+                            .seller__info{
+                                h3{
+                                    font-size: 16px;
+                                }
+
+                                .seller__ETH{
+                                    img{
+                                        width: 10px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .seller__procent{
+                            padding: 5px 10px;
+
+                            span{font-size: 12px;}
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .about{
+        margin-bottom: 200px;
+
+        .about__info{
+            h1{
+                font-size: 28px
+            }
+
+            p{
+                font-size: 16px;
+                line-height: 30px;
+            }
+        }
+    }
+
+    .subscribe{
+        .subscribe__flex{  
+            margin-bottom: 80px;
+            
+            .subscribe__info{
+                h1{
+                    font-size: 25px;
+                    line-height: 50px;
+
+                    margin-bottom: 15px;
+                }
+    
+                p{
+                    font-size: 14px;
+                    line-height: 35px;
+                    margin-bottom: 25px;
+                }
+    
+                .subscribe__form-flex{
+    
+                    input{
+                        font-size: 15.4764px;
+                        line-height: 27px;
+    
+                        padding: 10px 10px;
+
+                        width: 65%;
+                    }
+    
+                    button{
+                        border-radius: 0px 5.5273px 5.5273px 0px;
+                        padding: 10px 10px;
+    
+                        height: 53px;
+                    }
+                }
+            }
+        }
+    }
 }
