@@ -15,15 +15,14 @@ font-family: 'MuseoModerno', cursive;
 
 html{
     scroll-behavior: smooth;
-
 }
 
 body{
     overflow-x: hidden;
+    background: rgba(32, 8, 59, 1);
 }
 
 .wrapper{
-    background: rgba(32, 8, 59, 1);
     //backdrop-filter: blur(92.3058px);
 
     font-family: 'Orbitron';
@@ -31,7 +30,8 @@ body{
     color: #FFFFFF;
 
     overflow-x: hidden;
-    //position: relative;
+    position: relative;
+    z-index: 1;
 }
 
 ._content{
@@ -168,6 +168,58 @@ body{
 //=======================
 
 
+//===Decoration===
+
+.decoration{
+    .circule{
+        position: absolute;
+
+        z-index: 0;
+
+        width: 246px;
+        height: 246px;
+        border-radius: 100%;
+        filter: blur(100px);
+
+        opacity: 0.5;
+        background-color: #FF00C8;
+    }
+
+    .c1{
+        top: 570px;
+        left: 30px;
+    }
+
+    .c2{
+        top: 2000px;
+        left: 500px;
+    }
+
+    .c3{
+        top: 900px;
+        left: 1000px;
+    }
+
+    .c4{
+        top: 3000px;
+        right: 400px;
+    }
+
+    .c5{
+        top: 4000px;
+        left: 500px;
+    }
+
+    .c6{
+        top: 6200px;
+        right: 400px;
+    }
+
+    .c7{
+        top: 5300px;
+        left: 200px;
+    }
+}
 
 //===HEADER===
 
@@ -1352,7 +1404,10 @@ h2{
 
                         margin-bottom: 17.7px;
 
-                        img{display: none;}
+                        img{
+                            display: none;
+                            transform: rotate(90deg);
+                        }
                     }
 
                     .footer-line{display: none;}
@@ -1583,6 +1638,7 @@ h2{
                             img{
                                 display: block;
                                 margin-right: 5px;
+                                transition: 0.1s;
                             }
                         }
 
@@ -1591,13 +1647,17 @@ h2{
                             transition: 0.5s;
                         }
 
-                        .columns__links.open{
-                            display: block;
-                        }
-
                         .footer-line{
                             display: block;
                             margin-bottom: 15px;
+                        }
+                    }
+
+                    .open{
+                        .columns__links{display: block;}
+
+                        h3{
+                            img{transform: rotate(0deg);}
                         }
                     }
                 }
