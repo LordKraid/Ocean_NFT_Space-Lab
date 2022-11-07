@@ -20,6 +20,8 @@ html{
 body{
     overflow-x: hidden;
     background: rgba(32, 8, 59, 1);
+
+    position: relative;
 }
 
 .wrapper{
@@ -171,6 +173,8 @@ body{
 //===Decoration===
 
 .decoration{
+    max-width: 100vw;
+
     .circule{
         position: absolute;
 
@@ -197,7 +201,7 @@ body{
 
     .c3{
         top: 900px;
-        left: 1000px;
+        right: 450px;
     }
 
     .c4{
@@ -1671,6 +1675,8 @@ h2{
 }
 
 @media(max-width: 768px){
+    .decoration{display: none;}
+
     .menu-btn{display: block;}
 
     .header{
